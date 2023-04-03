@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+  }
+
+  #one {
+    margin: 16px;
+    background-color: palegreen;
+    padding: 16px;
+  }
+  #two {
+    margin: 10px 20px 30px 40px;
+    background-color: palegreen;
+    padding-inline: 20px;
+  }
+  #three {
+    margin: 40px 50px;
+    background-color: palegreen;
+  }
+  #four {
+    margin: 10px auto;
+    max-width: 960px;
+  }
+  .bgColor {
+    background-color: bisque;
+  }
