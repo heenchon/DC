@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*보더 박스는 내부 텍스트 사이즈에 따른 영향을 받지 않는다. 전체 사이즈 고정하기 위함*/
+  box-sizing: border-box;
+}
+
+.section {
+  /* background-color: red; */
+}
+
+.container {
+  /* background-color: green; */
+  --pInlineVal: 36px;
+  max-width: calc(1200px + 2 * var(--pInlineVal));
+  margin-inline: auto;
+  padding-inline: var(--pInlineVal);
+}
+
+.wrapper {
+  /* background-color: blue; */
+  padding-block: 32px;
+}
