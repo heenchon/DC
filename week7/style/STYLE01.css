@@ -16,6 +16,8 @@
 }
 
 .nav {
+  position: sticky;
+  top: 0;
   background-color: black;
   color: white;
   font-weight: 700;
@@ -30,6 +32,10 @@
   display: flex;
   gap: 24px;
   align-items: baseline;
+}
+.nav__menuWrapper a {
+  color: white;
+  text-decoration: none;
 }
 
 .button {
@@ -50,6 +56,15 @@
 
 .main__media {
   background-color: aliceblue;
+  overflow: hidden;
+}
+.main__media > * {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 #hero1 {
@@ -93,4 +108,41 @@
 }
 #hero2 p {
   margin-bottom: 24px;
-}/*# sourceMappingURL=STYLE06 copy.css.map */
+}
+
+.footer {
+  background-color: gray;
+  color: white;
+  font-size: 0.875rem;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer li {
+  list-style: none;
+}
+.footer svg {
+  fill: white;
+}
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.footer h2 {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+.footer li {
+  margin-bottom: 0.5rem;
+}
+.footer__logo {
+  margin-bottom: 0.75rem;
+}
+.footer__extlinWrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}/*# sourceMappingURL=STYLE01.css.map */
