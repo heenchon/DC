@@ -44,7 +44,7 @@
 }
 
 .sale {
-  background-color: antiquewhite;
+  margin-bottom: 48px;
   overflow: hidden;
 }
 .sale > * {
@@ -54,4 +54,117 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.shop1__title {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.shop1__main {
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+}
+.shop1__main__image {
+  flex: 3;
+  aspect-ratio: 5/3;
+}
+.shop1__main__image > * {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.shop1__main__info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(37, 56, 85);
+}
+.shop1__main__info > * {
+  margin-inline: 12px;
+  flex: 1;
+  color: white;
+}
+.shop1__main__info h2 {
+  margin-top: 16px;
+}
+.shop1__main__info .images {
+  flex: 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.shop1__main__info .images > * {
+  aspect-ratio: 2/1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shop1__main__info .price {
+  margin-top: 12px;
+  font-size: 18px;
+}
+.shop1__main__info .tags {
+  display: flex;
+  align-items: center;
+}
+.shop1__main__info .tags > * {
+  margin-inline: 8px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: black;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: center;
+  color: skyblue;
+  font-size: 15px;
+}
+
+.shop2 {
+  background-color: rgb(37, 56, 85);
+}
+.shop2 .gameWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.shop2__title {
+  margin-bottom: 24px;
+  color: white;
+}
+.shop2 .game {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.shop2 .game > * {
+  flex: 1;
+}
+.shop2 .game__image {
+  max-width: 360px;
+  aspect-ratio: 2/1;
+  overflow: hidden;
+}
+.shop2 .game__image > * {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.shop2 .game__text {
+  margin-left: 12px;
+}
+.shop2 .game__text h3 {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+.shop2 .game__price {
+  text-align: center;
+  max-width: 148px;
 }/*# sourceMappingURL=STYLE01.css.map */
