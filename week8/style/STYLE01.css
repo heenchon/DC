@@ -12,6 +12,14 @@
   padding-inline: var(--pInlineVal);
 }
 
+#containLib {
+  margin-top: 48px;
+  --pInlineVal: 36px;
+  max-width: calc(1600px + 2 * var(--pInlineVal));
+  margin-inline: auto;
+  padding-inline: var(--pInlineVal);
+}
+
 .wrapper {
   padding-block: 32px;
 }
@@ -68,7 +76,6 @@
 }
 
 .shop1__title {
-  font-size: 24px;
   margin-bottom: 24px;
 }
 .shop1__main {
@@ -154,6 +161,7 @@
   }
 }
 .shop2 {
+  padding-bottom: 48px;
   background-color: rgb(37, 56, 85);
 }
 .shop2 .gameWrapper {
@@ -196,4 +204,66 @@
 .shop2 .game__price {
   text-align: center;
   max-width: 148px;
+}
+
+.library .wrapper {
+  display: flex;
+  gap: 24px;
+}
+.library .wrapper .list {
+  background-color: black;
+  padding: 12px;
+}
+.library .wrapper .list__search {
+  margin-bottom: 12px;
+}
+.library .wrapper .list__games {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.library .wrapper .galleryWapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.library .wrapper .gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.library .wrapper .gallery__text {
+  font-size: 18px;
+}
+.library .wrapper .gallery__image {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.library .wrapper .gallery__image .image {
+  max-width: 360px;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+.library .wrapper .gallery__image .image > * {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.library .list__search {
+  background-color: slategrey;
+  color: rgb(78, 98, 117);
+  padding: 4px 48px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.library .list__games__game {
+  background-color: slategray;
+  color: black;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 15px;
 }/*# sourceMappingURL=STYLE01.css.map */

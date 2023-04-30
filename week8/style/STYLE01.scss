@@ -17,6 +17,14 @@
   padding-inline: var(--pInlineVal);
 }
 
+#containLib {
+  margin-top: 48px;
+  --pInlineVal: 36px;
+  max-width: calc(1600px + 2 * var(--pInlineVal));
+  margin-inline: auto;
+  padding-inline: var(--pInlineVal);
+}
+
 .wrapper {
   //   background-color: BLUE;
   padding-block: 32px;
@@ -48,6 +56,8 @@
     width: 58px;
   }
 }
+
+// 반응형 670px
 @media (width < 41.875rem) {
   .bar {
     .wrapper {
@@ -75,7 +85,7 @@
 
 .shop1 {
   &__title {
-    font-size: 24px;
+    // font-size: 24px;
     margin-bottom: 24px;
   }
   &__main {
@@ -141,6 +151,7 @@
   }
 }
 
+// 반응형 820px
 @media (width < 51.25rem) {
   .shop1 {
     &__main {
@@ -164,6 +175,7 @@
 }
 
 .shop2 {
+  padding-bottom: 48px;
   background-color: rgb(37, 56, 85);
   .gameWrapper {
     display: flex;
@@ -204,4 +216,75 @@
       max-width: 148px;
     }
   }
+}
+
+.library {
+  .wrapper {
+    display: flex;
+    gap: 24px;
+    .list {
+      background-color: black;
+      padding: 12px;
+      &__search {
+        margin-bottom: 12px;
+      }
+      &__games {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+    }
+    .galleryWapper {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      &__text {
+        font-size: 18px;
+      }
+      &__image {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        // & > * {
+        //   flex: 1;
+        // }
+        .image {
+          max-width: 360px;
+          aspect-ratio: 3/4;
+          overflow: hidden;
+          > * {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+  }
+  .list__search {
+    background-color: slategrey;
+    color: rgb(78, 98, 117); // 돋보기 이미지 넣기
+    padding: 4px 48px;
+    border-radius: 4px;
+    // text-align: start;
+    font-size: 15px;
+  }
+  .list__games__game {
+    // height: fit-content;
+    background-color: slategray;
+    color: black;
+    padding: 4px;
+    border-radius: 4px;
+    // text-align: center;
+    font-size: 15px;
+  }
+}
+
+.community {
 }
