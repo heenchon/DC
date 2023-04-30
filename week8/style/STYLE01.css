@@ -43,6 +43,17 @@
   width: 58px;
 }
 
+@media (width < 41.875rem) {
+  .bar .wrapper {
+    height: 100px;
+  }
+  .bar__menuWrapper {
+    gap: 12px;
+  }
+  .bar__profile {
+    display: none;
+  }
+}
 .sale {
   margin-bottom: 48px;
   overflow: hidden;
@@ -113,7 +124,8 @@
   align-items: center;
 }
 .shop1__main__info .tags > * {
-  margin-inline: 8px;
+  margin-block: 8px;
+  margin-right: 8px;
   height: -moz-fit-content;
   height: fit-content;
   background-color: black;
@@ -124,6 +136,23 @@
   font-size: 15px;
 }
 
+@media (width < 51.25rem) {
+  .shop1__main {
+    display: unset;
+    justify-content: space-around;
+    gap: 24px;
+  }
+  .shop2 .game {
+    display: flex;
+    flex-direction: column;
+  }
+  .shop2 .game__image {
+    margin-top: 12px;
+  }
+  .shop2 .game__price {
+    display: none;
+  }
+}
 .shop2 {
   background-color: rgb(37, 56, 85);
 }

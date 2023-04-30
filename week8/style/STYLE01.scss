@@ -48,6 +48,19 @@
     width: 58px;
   }
 }
+@media (width < 41.875rem) {
+  .bar {
+    .wrapper {
+      height: 100px;
+    }
+    &__menuWrapper {
+      gap: 12px;
+    }
+    &__profile {
+      display: none;
+    }
+  }
+}
 
 .sale {
   margin-bottom: 48px;
@@ -113,7 +126,8 @@
         display: flex;
         align-items: center;
         & > * {
-          margin-inline: 8px;
+          margin-block: 8px;
+          margin-right: 8px;
           height: fit-content;
           background-color: black;
           padding: 4px 8px;
@@ -122,6 +136,28 @@
           color: skyblue;
           font-size: 15px;
         }
+      }
+    }
+  }
+}
+
+@media (width < 51.25rem) {
+  .shop1 {
+    &__main {
+      display: unset;
+      justify-content: space-around;
+      gap: 24px;
+    }
+  }
+  .shop2 {
+    .game {
+      display: flex;
+      flex-direction: column;
+      &__image {
+        margin-top: 12px;
+      }
+      &__price {
+        display: none;
       }
     }
   }
