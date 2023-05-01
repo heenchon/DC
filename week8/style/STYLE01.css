@@ -49,11 +49,11 @@
   width: 58px;
 }
 
-@media (width < 41.875rem) {
+@media (width < 820px) {
   .bar .wrapper {
     height: 100px;
   }
-  .bar__menuWrapper {
+  .bar .wrapper .bar__menuWrapper {
     gap: 12px;
   }
   .bar__profile {
@@ -104,7 +104,7 @@
   color: white;
 }
 .shop1__main__info h2 {
-  margin-top: 16px;
+  margin-block: 8px;
 }
 .shop1__main__info .images {
   flex: 4;
@@ -143,8 +143,6 @@
 @media (width < 51.25rem) {
   .shop1__main {
     display: unset;
-    justify-content: space-around;
-    gap: 24px;
   }
   .shop2 .game {
     display: flex;
@@ -186,11 +184,9 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 .shop2 .game__text {
-  margin-left: 12px;
+  margin: 12px;
 }
 .shop2 .game__text > * {
   color: rgb(37, 42, 57);
@@ -207,6 +203,8 @@
 
 .library {
   background-color: rgb(37, 56, 85);
+  container-type: inline-size;
+  container-name: library;
 }
 .library .wrapper {
   display: flex;
@@ -269,7 +267,19 @@
   border-radius: 4px;
   font-size: 15px;
 }
+@container library (width < 820px) {
+  .library .wrapper .list {
+    display: none;
+  }
+  .library .wrapper #imageHide {
+    display: none;
+  }
+}
 
+.community {
+  container-type: inline-size;
+  container-name: community;
+}
 .community .wrapper h2 {
   margin-bottom: 18px;
 }
@@ -317,4 +327,20 @@
   display: flex;
   gap: 6px;
   margin-bottom: 6px;
+}
+@container community (width < 820px) {
+  .community .wrapper .windowWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 12px;
+  }
+  .community .wrapper .windowWrapper #window1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .community .wrapper .windowWrapper #window3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }/*# sourceMappingURL=STYLE01.css.map */
