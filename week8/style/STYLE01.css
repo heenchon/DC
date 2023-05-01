@@ -2,20 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
+  color: white;
+}
+
+.section {
+  background-color: rgb(37, 56, 85);
 }
 
 .container {
   --pInlineVal: 36px;
-  max-width: calc(1200px + 2 * var(--pInlineVal));
+  max-width: calc(1000px + 2 * var(--pInlineVal));
   margin-inline: auto;
   padding-inline: var(--pInlineVal);
 }
 
 #containLib {
-  margin-top: 48px;
   --pInlineVal: 36px;
-  max-width: calc(1600px + 2 * var(--pInlineVal));
+  max-width: calc(1200px + 2 * var(--pInlineVal));
   margin-inline: auto;
   padding-inline: var(--pInlineVal);
 }
@@ -28,7 +31,6 @@
   position: sticky;
   top: 0;
   background-color: black;
-  color: white;
   font-weight: 700;
 }
 .bar .wrapper {
@@ -41,11 +43,7 @@
   align-items: center;
 }
 .bar .wrapper .bar__menuWrapper a {
-  color: white;
   text-decoration: none;
-}
-.bar__profile {
-  color: white;
 }
 .bar__logo {
   width: 58px;
@@ -63,7 +61,6 @@
   }
 }
 .sale {
-  margin-bottom: 48px;
   overflow: hidden;
 }
 .sale > * {
@@ -99,7 +96,7 @@
   flex: 2;
   display: flex;
   flex-direction: column;
-  background-color: rgb(37, 56, 85);
+  background-color: rgb(25, 30, 46);
 }
 .shop1__main__info > * {
   margin-inline: 12px;
@@ -161,7 +158,6 @@
   }
 }
 .shop2 {
-  padding-bottom: 48px;
   background-color: rgb(37, 56, 85);
 }
 .shop2 .gameWrapper {
@@ -171,7 +167,6 @@
 }
 .shop2__title {
   margin-bottom: 24px;
-  color: white;
 }
 .shop2 .game {
   background-color: white;
@@ -197,24 +192,33 @@
 .shop2 .game__text {
   margin-left: 12px;
 }
+.shop2 .game__text > * {
+  color: rgb(37, 42, 57);
+}
 .shop2 .game__text h3 {
   margin-bottom: 8px;
   font-size: 24px;
 }
 .shop2 .game__price {
+  color: rgb(37, 42, 57);
   text-align: center;
   max-width: 148px;
 }
 
+.library {
+  background-color: rgb(37, 56, 85);
+}
 .library .wrapper {
   display: flex;
   gap: 24px;
 }
 .library .wrapper .list {
+  width: 240px;
   background-color: black;
   padding: 12px;
 }
 .library .wrapper .list__search {
+  color: rgb(22, 25, 37);
   margin-bottom: 12px;
 }
 .library .wrapper .list__games {
@@ -254,16 +258,63 @@
      object-position: center;
 }
 .library .list__search {
-  background-color: slategrey;
-  color: rgb(78, 98, 117);
-  padding: 4px 48px;
+  background-color: rgb(37, 56, 85);
+  padding: 4px;
   border-radius: 4px;
   font-size: 15px;
 }
 .library .list__games__game {
-  background-color: slategray;
-  color: black;
+  background-color: rgb(37, 56, 85);
   padding: 4px;
   border-radius: 4px;
   font-size: 15px;
+}
+
+.community .wrapper h2 {
+  margin-bottom: 18px;
+}
+.community .wrapper .windowWrapper {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+}
+.community .wrapper .windowWrapper #window1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.community .wrapper .windowWrapper #window3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.community .wrapper .window {
+  background-color: rgb(25, 30, 46);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px;
+}
+.community .wrapper .window__image {
+  flex: 3;
+  overflow: hidden;
+}
+.community .wrapper .window__image > * {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.community .wrapper .window__text {
+  flex: 1;
+  overflow: hidden;
+}
+.community .wrapper .window__text > * {
+  color: white;
+}
+.community .wrapper .window__text__title {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
 }/*# sourceMappingURL=STYLE01.css.map */
