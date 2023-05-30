@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.wrapper {
+  max-width: 70ch;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.site-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+section {
+  padding-block: 5rem;
+  .section-title {
+    font-size: 2.25rem;
+  }
+  &:nth-of-type(odd) {
+    background-color: darkgray;
+  }
+}
+
+.diagonal {
+  background: linear-gradient(
+    45deg in oklab,
+    oklch(80% 0.5 340) 0%,
+    oklch(80% 0.5 200) 100%
+  );
+}

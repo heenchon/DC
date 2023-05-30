@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  font-family: system-ui;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  /* 한글은 1.6 정도를 사용한다. 글자가 커질수록 1.5는 여백이 커보임 */
+  margin: 0;
+}
+
+main {
+  margin-inline: auto;
+
+  /* padding-inline: 2rem; */
+  /* max-width: 70ch; */
+  width: min(70ch, 100% - 2 * 32px);
+  /* ch: 글자 크기대비 단위. 1ch는 0이 하나 들어가는 사이즈 */
+  /* 화면 크기대비 단위: vh */
+}
+
+/* p {
+  margin: 0;
+}
+이미지와 p태그 사이의 갭을 없애는 방법
+img {
+  display: block;
+} */
+
+img,
+svg,
+video,
+iframe {
+  display: block;
+  max-width: 100%;
+}
